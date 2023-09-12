@@ -45,3 +45,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Disable blur on app launch
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
+
+ifeq ($(WITH_GAPPS),true)
+#   $(call inherit-product, vendor/gms/setup.mk)
+    $(call inherit-product, vendor/gms/gms_full.mk)
+    ifeq ($(TARGET_INCLUDE_PIXEL_FRAMEWORK), true)
+      $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
+    endif
+endif

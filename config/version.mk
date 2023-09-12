@@ -17,11 +17,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 ifeq ($(WITH_GAPPS), true)
-  ALPHA_BUILD_PACKAGE := gapps
-  $(call inherit-product, vendor/gms/setup.mk)
-  ifeq ($(TARGET_INCLUDE_PIXEL_FRAMEWORK), true)
-    $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
-  endif
+    ALPHA_BUILD_PACKAGE := gapps
 else
   ALPHA_BUILD_PACKAGE := vanilla
 endif
