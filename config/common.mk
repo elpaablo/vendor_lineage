@@ -251,6 +251,7 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     GesturalNavigationOverlayHidden \
+    GesturalNavigationOverlayHiddenNarrow \
     ThemedIconsOverlay
 
 # TextClassifier
