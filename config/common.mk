@@ -250,7 +250,7 @@ PRODUCT_PACKAGES += \
     CustomFontPixelLauncherOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
-    NavigationBarNoHintOverlay \
+    GesturalNavigationOverlayHidden \
     ThemedIconsOverlay
 
 # TextClassifier
