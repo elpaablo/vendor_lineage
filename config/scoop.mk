@@ -9,3 +9,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_ID?=BP22.250124.009 \
     persist.sys.pihooks_FINGERPRINT?=google/tokay_beta/tokay:Baklava/BP22.250124.009/13034193:user/release-keys \
     persist.sys.pihooks_MODEL?=Pixel 9
+
+-include vendor/scoop-priv/keys/keys.mk
